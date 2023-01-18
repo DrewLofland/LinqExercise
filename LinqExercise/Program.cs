@@ -85,7 +85,7 @@ namespace LinqExercise
             Console.WriteLine($"Employees over age 26:");
             var over26 = employees.Where(x => x.Age > 26).OrderBy(x => x.Age).ThenBy(x => x.FirstName);
             foreach (var employee in over26)
-                Console.WriteLine($" {employee.Age}, {employee.FirstName}");
+                Console.WriteLine($" {employee.FullName}, {employee.Age}");
                 Console.WriteLine();
             
             //TODO: Print the Sum and then the Average of the employees' YearsOfExperience if their YOE is less than or equal to 10 AND Age is greater than 35.
